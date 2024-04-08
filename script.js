@@ -7,7 +7,7 @@ let getMovie = () => {
   let movieName = movieNameref.value;
   let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
   if (movieName.length <= 0) {
-    result.innerHTML = `<h3 class = "msg">lease Enter A Movie Name<h3>`P
+    result.innerHTML = `<h3 class = "msg">lease Enter A Movie Name<h3>`
   }
   else {
     fetch(url)
